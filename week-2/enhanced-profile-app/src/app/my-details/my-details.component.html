@@ -1,0 +1,17 @@
+  <!--
+            Title: Exercise 2.3 - Data Binding
+            File Name: my-details.component.html
+            Date: 6/3/23
+            Description: My details page
+        -->
+
+        <ul>
+            <li>Name: {{ myProfile.fullName }}</li>
+            <li>Favorite Food: {{ myProfile.favoriteFood }}</li>
+            <li>Favorite Color:{{ myProfile.favoriteColor }}</li> 
+            <li>Keywords: <span *ngFor="let word of myProfile.keywords">
+              {{ word }}
+            </span></li>
+          
+          </ul>
+            
