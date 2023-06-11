@@ -1,0 +1,17 @@
+  <!--
+            Title: Exercise 3.3 - Passing Data to Routes, Part 2
+            File Name: my-details.component.html
+            Date: 6/10/23
+            Description: My details page
+        -->
+
+        <ul>
+            <li>Name: {{ myProfile.fullName }}</li>
+            <li>Favorite Food: {{ myProfile.favoriteFood }}</li>
+            <li>Favorite Color:{{ myProfile.favoriteColor }}</li> 
+            <li>Keywords: <span *ngFor="let word of myProfile.keywords">
+              {{ word }}
+            </span></li>
+          
+          </ul>
+            
