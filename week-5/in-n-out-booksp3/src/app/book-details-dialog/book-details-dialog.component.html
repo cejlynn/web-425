@@ -1,0 +1,32 @@
+<!--
+    ========================================================================================================================
+    ; Title: book-details-dialog.component.html
+    ; Author: Caitlynne Johnson
+    ; Bellevue University
+    ; Date: 6/25/23
+    ; Description: This purpose of this assignment is create new navigation and layout based on flex layout and angular materials
+    ========================================================================================================================
+-->
+
+<mat-card>
+    <mat-card-title class="blue">{{ book.title }}</mat-card-title>
+    <br /><br />
+    <mat-card-content>
+      <div fxLayout="column">
+        <p>ISBN: {{ book.isbn }}</p>
+        <p>
+          Description:<br />
+          {{ book.description }}
+        </p>
+        <p>
+          Authors:<br />
+          {{ book.authors.join(", ") }}
+        </p>
+      </div>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-raised-button color="accent" matDialogClose="confirm">
+        OK
+      </button>
+    </mat-card-actions>
+  </mat-card>
